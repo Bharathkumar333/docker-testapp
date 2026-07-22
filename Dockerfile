@@ -1,12 +1,12 @@
 FROM node:20
 
-WORKDIR /docker-testapp-main
+WORKDIR /app
 
-
+COPY docker-testapp-main/package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY docker-testapp-main/ .
 
 EXPOSE 3000
 
