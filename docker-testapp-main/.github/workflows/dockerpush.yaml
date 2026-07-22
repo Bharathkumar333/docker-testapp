@@ -27,9 +27,9 @@ build-and-push:
           password: ${{ secrets.DOCKER_PASSWORD }}
  
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/docker-testapp-main
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/docker-testapp-main
 
 
