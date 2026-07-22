@@ -2,7 +2,6 @@ FROM node:20
 
 WORKDIR /docker-testapp-main
 
-COPY package*.json ./
 
 
 RUN npm install
